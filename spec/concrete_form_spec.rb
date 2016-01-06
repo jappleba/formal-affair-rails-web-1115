@@ -71,7 +71,8 @@ feature 'concrete form' do
         'id'         => concrete.id.to_s,
         'authenticity_token' => 'test token'
       }
-
+      require 'pry'
+      # binding.pry
       expect(expected_params).to eq test_params
     end
   end
